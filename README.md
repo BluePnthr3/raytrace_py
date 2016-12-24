@@ -55,3 +55,15 @@ Scene:
 Mesh(es)
 Light(s)
 - interactRay
+
+Spectrum:
+SpecralData
+WavelengthStart
+WavelengthStop
+WavelengthStep
+UnitsFlag?
+ - interpolate
+ - point-to-point-multiply
+ - getCurrentIntensity
+ - setCurrentIntensity
+

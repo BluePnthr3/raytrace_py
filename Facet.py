@@ -12,13 +12,13 @@ class Facet(object):
     """
 
     def __init__(self, p1, p2, p3, spectral_reflectance):
-        """ Initialize a Facet with corner Points and a SpectralReflectance.
+        """ Initialize a Facet with corner Points and a Spectrum.
 
         Args:
             p1: first corner Point
             p2: second corner Point
             p3: third corner Point
-            spectral_reflectance: the surface SpectralReflectance
+            spectral_reflectance: the surface Spectrum
 
         """
         self.p1 = p1
@@ -51,7 +51,7 @@ class Facet(object):
             lights: an iterable of lights to consider for interaction
 
         Returns:
-            The SpectralPowerDistribution of the Facet at the selected Point
+            The Spectrum of the Facet at the selected Point
         """
         pass
 
